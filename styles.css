@@ -1,134 +1,71 @@
-#main {
-  width: 100vw;
-  height: 100vh;
-  margin: 30px 150px;
+body, html {
+  background: #ECEDEF;
+  margin: 0;
+  padding: 0;
 }
-
-#options {
-  position: relative;
+ 
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+  border-radius: 14px;
+  padding-bottom: 20px;
+  width: 320px;
+  
 }
-
-#options-container {
-  position: absolute;
-  top: 30%;
-}
-
-#display {
-  position: relative;
-}
-
-#display-container {
-  position: absolute;
-  top: 30%;
-  margin-left: 150px;
-}
-
-div.result {
-  border: 1px solid gray;
-  border-radius: 5px;
-  height: 300px;
-  width: 150px;
-  display: inline-block;
-  margin: 3px;
-  overflow: hidden;
-  opacity: 0;
-}
-
-div.result.slide-in {
-  opacity: 1;
-  transform: translate(-40px, 0);
-  transition: all 1s ease-in;
-}
-
-div.image-holder {
+.display {
   width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 60px;
+  padding: 40px 0;
+  background: #FF0509;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
 }
-
-div.rare-5 {
-  background-image: linear-gradient(
-    0,
-    rgba(255, 255, 0, 1) 0%,
-    rgba(255, 255, 200, 1) 50%,
-    rgba(255, 255, 0, 1) 100%
-  );
+.buttons {
+  padding: 20px 20px 0 20px;
 }
-
-div.rare-4 {
-  background-image: linear-gradient(
-    0,
-    rgb(97, 20, 160) 0%,
-    rgba(168, 151, 255, 1) 50%,
-    rgb(97, 20, 160) 100%
-  );
+.row {
+  width: 280px;
+  float: left;
 }
-
-div.image-diluc {
-  background-image: url(assets/Character_Diluc_Portrait.png);
+input[type=button] {
+  width: 60px;
+  height: 60px;
+  float: left;
+  padding: 0;
+  margin: 5px;
+  box-sizing: border-box;
+  background: #ecedef;
+  border: none;
+  font-size: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  font-weight: 700;
+  color: #5E5858;
+  cursor: pointer;
+  
 }
-div.image-qiqi {
-  background-image: url(assets/Character_Qiqi_Portrait.png);
+input[type=text] {
+  width: 270px;
+  height: 60px;
+  float: left;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  background: none;
+  color: #ffffff;
+  text-align: right;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0 25px;
+  
 }
-div.image-keqing {
-  background-image: url(assets/Character_Keqing_Portrait.png);
-}
-div.image-jean {
-  background-image: url(assets/Character_Jean_Portrait.png);
-}
-div.image-mona {
-  background-image: url(assets/Character_Mona_Portrait.png);
-}
-div.rare-3 div.image-weapon {
-  background-image: url(assets/Weapon_Dull_Blade.png);
-}
-div.rare-4 div.image-weapon {
-  background-image: url(assets/Weapon_Prototype_Rancour.png);
-}
-div.rare-5 div.image-weapon {
-  background-image: url(assets/Weapon_Wolfs_Gravestone.png);
-}
-div.image-sucrose {
-  background-image: url(assets/Character_Sucrose_Portrait.png);
-}
-div.image-chongyun {
-  background-image: url(assets/Character_Chongyun_Portrait.png);
-}
-div.image-noelle {
-  background-image: url(assets/Character_Noelle_Portrait.png);
-}
-div.image-bennett {
-  background-image: url(assets/Character_Bennett_Portrait.png);
-}
-div.image-fischl {
-  background-image: url(assets/Character_Fischl_Portrait.png);
-}
-div.image-ningguang {
-  background-image: url(assets/Character_Ningguang_Portrait.png);
-}
-div.image-xingqiu {
-  background-image: url(assets/Character_Xingqiu_Portrait.png);
-}
-div.image-beidou {
-  background-image: url(assets/Character_Beidou_Portrait.png);
-}
-div.image-xiangling {
-  background-image: url(assets/Character_Xiangling_Portrait.png);
-}
-div.image-amber {
-  background-image: url(assets/Character_Amber_Portrait.png);
-}
-div.image-razor {
-  background-image: url(assets/Character_Razor_Portrait.png);
-}
-div.image-kaeya {
-  background-image: url(assets/Character_Kaeya_Portrait.png);
-}
-div.image-barbara {
-  background-image: url(assets/Character_Barbara_Portrait.png);
-}
-div.image-lisa {
-  background-image: url(assets/Character_Lisa_Portrait.png);
+.red {
+  background: #FF0509 !important;
+  color: #ffffff !important;
+  
 }
